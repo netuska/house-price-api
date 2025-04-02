@@ -1,0 +1,2 @@
+echo "model.pkl" >> .gitignore
+git rm --cached model.pkl
