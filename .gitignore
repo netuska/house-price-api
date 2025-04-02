@@ -1,2 +1,15 @@
-echo "model.pkl" >> .gitignore
-git rm --cached model.pkl
+# Ignore the trained model file
+model.pkl
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment folders (if any)
+venv/
+.env/
+env/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
