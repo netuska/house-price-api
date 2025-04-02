@@ -5,17 +5,14 @@ import numpy as np
 import os
 import gdown
 
-# Google Drive file ID for the model
 MODEL_ID = "1icVcey1pfpf0wc2XT3EG5Z90LUdpt0iG"
 MODEL_PATH = "model.pkl"
-
-# Download the model file if it doesn't exist
 if not os.path.exists(MODEL_PATH):
     print("Downloading model from Google Drive using gdown...")
     gdown.download(id=MODEL_ID, output=MODEL_PATH, quiet=False)
     print("Model download complete.")
 
-# Load the trained model
+
 model = joblib.load(MODEL_PATH)
 
 # Initialize FastAPI app
